@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="42.883" height="62.825" viewBox="0 0 42.883 62.825">
+  <g id="Icon_feather-figma" data-name="Icon feather-figma" transform="translate(1.5 1.5)">
+    <path id="Path_1" data-name="Path 1" d="M7.5,12.971A9.971,9.971,0,0,1,17.471,3h9.971V22.942H17.471A9.971,9.971,0,0,1,7.5,12.971Z" transform="translate(-7.5 -3)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+    <path id="Path_2" data-name="Path 2" d="M18,3h9.971a9.971,9.971,0,1,1,0,19.942H18Z" transform="translate(1.942 -3)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+    <path id="Path_3" data-name="Path 3" d="M18,23.471a9.971,9.971,0,1,1,9.971,9.971A9.971,9.971,0,0,1,18,23.471Z" transform="translate(1.942 6.442)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+    <path id="Path_4" data-name="Path 4" d="M7.5,33.971A9.971,9.971,0,0,1,17.471,24h9.971v9.971a9.971,9.971,0,1,1-19.942,0Z" transform="translate(-7.5 15.883)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+    <path id="Path_5" data-name="Path 5" d="M7.5,23.471A9.971,9.971,0,0,1,17.471,13.5h9.971V33.442H17.471A9.971,9.971,0,0,1,7.5,23.471Z" transform="translate(-7.5 6.442)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+  </g>
+</svg>
