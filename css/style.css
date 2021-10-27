@@ -1,0 +1,487 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;600;700;900&display=swap');
+
+:root {
+    --lighterG: #B3DBCF;
+    --lightG: #5CB89C;
+    --midG: #3d7463;
+    --darkG: #1A4437;
+    --darkerG: #2B584A;
+    --bgG: #002016;
+    --bgBlur: rgba(0, 32, 22, 0.5);
+}
+
+* {
+    padding: 0; margin: 0;
+    transition: all 0.1s ease-in;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+    transition: 0.2s;
+}
+
+html {
+    overflow-x: hidden;
+    font-size: 62.5%;
+}
+
+body {
+    background-color: var(--bgG);
+    color: var(--lighterG);
+}
+
+.container {
+  width: 90%;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Main css starts here */
+.main-container {
+  width: 100%;
+  margin-top: 5rem;
+}
+
+.main-container img {
+  width: 100%;
+  max-width: 500px;
+  display: flex;
+  margin: auto;
+}
+
+.headers {
+  color: var(--lightG);
+  font-size: 3rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 3rem 0;
+}
+
+.header-container {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 2rem;
+}
+
+.menu-btn {
+  background-color: #fff;
+  border: none;
+  padding: 0.7rem 1rem;
+  display: flex;
+  box-shadow: 0 6px 33px #000;
+  align-items: center;
+  cursor: pointer;
+}
+
+.menu-btn:hover {
+  background-color: var(--bgG);
+  color: #fff;
+}
+
+.menu-btn span {
+  font-weight: 700;
+  padding-left: 1rem;
+}
+
+.menu-btn ion-icon {
+  font-size: 2rem;
+}
+
+.texts {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 2rem 0;
+}
+
+.main-container span {
+  color: #fff;
+}
+
+.main-container h3 {
+  font-size: 1.5rem;
+}
+
+.main-btn {
+  border: 3px solid var(--lightG);
+  background-color: transparent;
+  padding: 1.2rem 2rem;
+  margin: 3rem 0;
+  cursor: pointer;
+}
+
+.main-btn:hover {
+  background-color: var(--lightG);
+}
+
+.main-btn span {
+  font-size: 2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+/* Main css ends here */
+
+.low-case {
+  text-transform: lowercase;
+}
+
+.back-figure {
+  position: absolute;
+  z-index: -100;
+  transform: translateX(-60%);
+  opacity: 0.3;
+  width: 200vw;
+  max-width: 600px;
+  top: 80rem;
+}
+
+.lighter {
+  font-size: 1.6rem;
+}
+
+section:not(:last-child) {
+  margin: 10rem 0;
+}
+
+/* skill cards css starts here */
+
+.sections-grid {
+  padding-top: 7rem;
+}
+
+.grid-section .sections-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+  margin: auto;
+  justify-items: center;
+  align-items: center;
+  row-gap: 14rem;
+}
+
+.card {
+  background-color: #2B584A;
+  width: 270px;
+  height: 160px;
+  border-radius: 20px;
+  margin: auto;
+}
+
+.card-icon-back {
+  background-color: var(--darkG);
+  top: -40%;
+  width: 135px;
+  height: 116px;
+  transform: translateY(-50%);
+  display: flex;
+  margin: auto;
+  border-radius: 20px;
+  left: calc(270px/4);
+}
+
+
+.card .card-icon-back img {
+  color: #fff;
+  font-size: 0.4rem;
+  margin: auto;
+  justify-content: center;
+  align-content: center;
+}
+
+.card p {
+  color: #fff;
+  font-weight: 600;
+  font-size: 2rem;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  transform: translateY(-80%);
+}
+
+.card-4,
+.card-5,
+.card-6 {
+  display: none;
+}
+
+.centered {
+  display: flex;
+  margin: 5rem auto;
+}
+
+/*skill cards css ends here */
+
+/* reviews cards css starts here */
+
+
+.rev-back-card {
+  background-color: #2B584A;
+  width: 100%;
+  max-width: 27rem;
+  height: 22rem;
+  border-radius: 20px;
+  margin: auto;
+}
+
+.rev-clients-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  margin: 10rem auto;
+  justify-content: center;
+  row-gap: 10rem;
+  column-gap: 7rem;
+}
+
+.rev-circle {
+  background-color: var(--bgG);
+  border-radius: 50%;
+  width: 15rem;
+  height: 15rem;
+  transform: translateY(-50%);
+  margin: auto;
+}
+
+.rev-img-circle {
+  border: 1px solid var(--darkerG);
+  border-radius: 50%;
+  width: 15rem;
+  height: 15rem;
+  transform: scale(0.9);
+  
+}
+
+.rev-circle .rev-img-circle img {
+  border-radius: 50% 50% 50% 50%;
+  width: 15rem;
+  height: 15rem;
+  background-size: cover;
+}
+
+.rev-card-content {
+ display: flex;
+ flex-direction: column;
+ transform: translateY(-55%);
+ padding: 4rem;
+ color: #fff;
+}
+
+.rev-card-content h5 {
+  font-size: 2rem;
+  padding-bottom: 1rem;
+  margin: 0;
+}
+
+.rev-card-content h6 {
+  font-weight: 400;
+  font-size: 1.2rem;
+  padding-bottom: 1.2rem;
+}
+
+.rev-card-content p {
+  font-size: 1.3rem;
+  margin-bottom:1rem;
+  font-weight: 200;
+  width: 100%;
+}
+
+/* review cards css ends here */
+
+/* projects cards css starts here */
+.projects-container {
+  width: 100%;
+  height: 28rem;
+}
+
+.projects-card-container {
+  background-color: #fff;
+  border-radius: 20px;
+  width: 100%;
+  height: 30rem;
+
+}
+
+.projects-card-container img {
+  width: 100%;
+  height: 20rem;
+  border-radius: 20px 20px 0 0;
+}
+
+.projects-card-container figcaption {
+  text-align: center;
+  padding-top: 3rem;
+  font-weight: 900;
+  font-size: 2rem;
+  color: var(--bgG);
+}
+
+/*projects cards css ends here*/
+
+/*contact css starts here */
+
+.contact-section {
+  margin-top: 15rem;
+}
+.contact-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.text-input {
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 1.8rem;
+  height: 3.9rem;
+}
+
+.contact-form-label {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #fff;
+  padding: 1rem 0;
+}
+
+.contact-form textarea {
+  height: 14rem;
+  width: 100%;
+  resize: none;
+}
+
+.contact-form .text-input::placeholder {
+  padding: 1.2rem;
+  opacity: 0.4;
+}
+
+.form-btn {
+  border: none;
+  background-color: var(--darkerG);
+  border-radius: 0.5rem;
+  height: 5rem;
+  cursor: pointer;
+}
+
+.form-btn:hover {
+  background-color: var(--lightG);
+}
+
+.form-btn span {
+  text-transform: uppercase;
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #fff;
+}
+/*contact css ends here */
+
+/*social media css starts here */
+
+.social-icons {
+  color: #fff;
+  font-size: 5.6rem;
+  display: flex;
+  justify-content:space-evenly;
+  margin-bottom: 5rem;
+}
+
+.icons {
+  cursor: pointer;
+}
+.icons:hover {
+  color: var(--midG);
+}
+
+.social-span {
+  display: none;
+}
+
+.copy {
+  text-align: center;
+}
+
+
+/*social media ends here */
+
+/* media queries*/
+
+@media screen and (min-width: 768px) {
+  
+  .main-container {
+    display: flex;
+    column-gap: 5rem;
+  }
+  .left-content {
+    order: 1;
+    width: 48rem;
+  }
+  .right-content {
+    order: 2;
+  }
+  .about-me-container {
+    display: flex;
+    column-gap: 20rem;
+  }
+  .back-figure {
+    top: 55rem;
+  }
+  .card-4,
+  .card-5,
+  .card-6 {
+    display: grid;
+  }
+  .grid-section .sections-grid {
+    grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+    column-gap: 5rem;
+  }
+  .skills-span {
+    display: none;
+  }
+
+  .text-input,
+  .contact-form .form-btn {
+    max-width: calc(100vw/2.5);
+  }
+
+  footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2rem;
+  }
+
+  .social-section {
+    margin-top: 10rem;
+  }
+
+  .social-section h2 {
+    display: none;
+  }
+
+  .social-icons {
+    display: flex;
+    flex-direction: column;
+    row-gap: 5rem;
+  }
+
+  .social-icons .social-span {
+    display: inline-block;
+    font-size: 2rem;
+    padding-left: 2rem;
+  }
+
+  .icons-row {
+    display: flex;
+    align-items: center;
+  }
+  
+}
+
+@media screen and (min-width: 1440px) {
+
+  .grid-section .sections-grid {
+    column-gap: 15rem;
+  }
+
+  .back-figure {
+    max-width: 1000px;
+    transform: translateX(-80%);
+    top: 30rem;
+  }
+}

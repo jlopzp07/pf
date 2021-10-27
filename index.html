@@ -1,253 +1,263 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/styles.css" />
-    <link rel="stylesheet" href="./css/skill-cards.css" />
-    <link rel="stylesheet" href="./css/reviews-cards.css" />
-    <title>Document</title>
-  </head>
 
-  <body>
-    <!-- Header section starts here -->
-    <header class="header-bar" id="main-section">
-      <nav class="nav-bar">
-        <div class="nav-bar__items">
-          <ul>
-            <a href="#main-section" class="active">
-              <li>home</li>
-            </a>
-            <a href="#about-me-section">
-              <li>about me</li>
-            </a>
-            <a href="#skills-section">
-              <li>skills</li>
-            </a>
-            <a href="#reviews-section">
-              <li>reviews</li>
-            </a>
-            <a href="#projects-section">
-              <li>projects</li>
-            </a>
-          </ul>
-        </div>
-        <button class="main-btn">contact me</button>
-      </nav>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="container">
+    <header class="header-container">
+      <button class="menu-btn">
+        <ion-icon name="menu-outline"></ion-icon><span>menu</span>
+      </button>
     </header>
-    <!-- Header section ends here -->
-    <div class="container">
-      <!-- Main section starts here -->
-
-      <main >
-        <section class="main-section" >
-          <div class="left-side">
-            <h1 class="headers">welcome!</h1>
-            <h6>I'm <strong>Juan Felipe López</strong></h6>
-            <p class="texts">
-              UX/UI designer, HTML, CSS, data analyst, mechanical engineer
-            </p>
-            <button>
-              <span>download cv</span>
-            </button>
-          </div>
-          <div class="right-side">
-            <img src="./images/profile-img.png" alt="" />
-          </div>
-        </section>
-      </main>
-
-      <!-- Main section ends here -->
-
-      <!-- about me section starts here -->
-
-      <section class="section2-container">
-        <div class="left-side" id="about-me-section">
-          <img class="side-img" src="./images/Rectangle.png" alt="" />
+    <main class="main-container">
+      <div class="right-content">
+        <img src="./images/profile-img.png" alt="" />
+      </div>
+      <div class="left-content">
+        <h1 class="headers">welcome!</h1>
+        <h3>I'm <span>Juan Felipe López</span></h3>
+        <p class="texts">UX/UI designer, HTML, CSS, data analyst, mechanical engineer</p>
+        <button class="main-btn">
+          <span>download cv</span>
+        </button>
+      </div>
+    </main>
+    <section>
+      <div class="about-me-container">
+        <div class="left-content">
+          <img class="back-figure" src="./images/Rectangle.png" alt="" />
         </div>
-        <div class="right-side">
-          <h2 class="headers low-case">about me</h2>
+        <div class="right-content">
+          <h1 class="headers low-case">about me</h1>
           <p class="texts lighter">
             I'm a passionate person, whatever I do I put all my effort into it.
             Love technology, love animals, extreme sports, and riding my
-            motorbike. I read a lot to be updated, love reading police books,
-            suspense, love going to the movies.
-            <br />
-            <br />
-            I like to keep studying, learning every time, learning from people,
-            teamwork, multi-disciplinary teams, diversity. What I always say is
-            that you can always learn something from anybody.
+            motorbike.
+            <br>
+            <br>
+            I read a lot to be updated, love reading police books,
+            suspense, love going to the movies. I like to keep studying, learning
+            every time, learning from people, teamwork, multi-disciplinary teams,
+            diversity.
+            <br>
+            <br>What I always say is that you can always learn something
+            from anybody.
           </p>
         </div>
-      </section>
+      </div>
+    </section>
+    <!-- skills section starts here -->
+    <section class="grid-section" id="skills-section">
+      <div class="headers low-case">
+        <h2>skills</h2>
+      </div>
+      <div class="sections-grid">
+        <div class="card-container card-1">
+          <div class="card">
+            <div class="card-icon-back">
+              <img src="./images/xd-icon.svg" alt="" />
+            </div>
+            <p>Adobe XD</p>
+          </div>
+        </div>
+        <div class="card-container card-2">
+          <div class="card">
+            <div class="card-icon-back">
+              <img src="./images/vstudio-icon.svg" alt="" />
+            </div>
+            <p>Visual Studio</p>
+          </div>
+        </div>
+        <div class="card-container card-3">
+          <div class="card">
+            <div class="card-icon-back">
+              <img src="./images/figma-icon.svg" alt="" />
+            </div>
+            <p>Figma</p>
+          </div>
+        </div>
+        <div class="card-container card-4">
+          <div class="card">
+            <div class="card-icon-back">
+              <img src="./images/vba-icon.svg" alt="" />
+            </div>
+            <p>Visual Basic</p>
+          </div>
+        </div>
+        <div class="card-container card-5">
+          <div class="card">
+            <div class="card-icon-back">
+              <img src="./images/ps-icon.svg" alt="" />
+            </div>
+            <p>Photoshop</p>
+          </div>
+        </div>
+        <div class="card-container card-6">
+          <div class="card">
+            <div class="card-icon-back">
+              <img src="./images/sw-icon.svg" alt="" />
+            </div>
+            <p>CSWA Solidworks</p>
+          </div>
+        </div>
+      </div>
+      <button class="main-btn centered">
+        <span>view more</span>
+      </button>
+    </section>
+    <!-- skills section ends here -->
 
-      <!-- about me section ends here -->
+    <!-- reviews sections starts here -->
 
-      <!-- skills section starts here -->
+    <section class="clients-section" id="reviews-section">
+      <div class="headers low-case">
+        <h2>clients</h2>
+      </div>
+      <div class="rev-clients-grid">
+        <div class="rev-back-card">
+          <div class="rev-circle">
+            <div class="rev-img-circle">
+              <img src="./images/client-1-img.jpeg" alt="" />
+            </div>
+          </div>
+          <div class="rev-card-content">
+            <h5>Nicole</h5>
+            <h6>Bonnetteandotheworld</h6>
+            <p>
+              "Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Eveniet, totam?"
+            </p>
+          </div>
+        </div>
+        <div class="rev-back-card">
+          <div class="rev-circle">
+            <div class="rev-img-circle">
+              <img src="./images/client-2-img.jpeg" alt="" />
+            </div>
+          </div>
+          <div class="rev-card-content">
+            <h5>Laura</h5>
+            <h6>Moon Back</h6>
+            <p>
+              "Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Eveniet, totam?"
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- reviews sections ends here -->
 
-      <section class="grid-section" id="skills-section">
+    <!-- projects section starts here -->
+    <section class="grid-section" id="projects-section">
+      <div class="headers low-case">
+        <h2>projects</h2>
+      </div>
+      <div class="sections-grid">
+        <div class="projects-container">
+          <div class="projects-container-content">
+            <div class="projects-card-container">
+              <img src="./images/PETTO APP Cover.png" alt="" />
+              <figcaption>PETTO App</figcaption>
+              <button class="main-btn centered"><span>view more</span></button>
+            </div>
+          </div>
+        </div>
+        <div class="projects-container">
+          <div class="projects-container-content">
+            <div class="projects-card-container">
+              <img src="./images/Website Cover.png" alt="" />
+              <figcaption>PETTO Web</figcaption>
+              <button class="main-btn centered"><span>view more</span></button>
+            </div>
+          </div>
+        </div>
+        <div class="projects-container">
+          <div class="projects-container-content">
+            <div class="projects-card-container">
+              <img src="./images/time-tracking-app.png" alt="" />
+              <figcaption>Time tracking app</figcaption>
+              <button class="main-btn centered"><span>view more</span></button>
+            </div>
+          </div>
+        </div>
+        <div class="projects-container">
+          <div class="projects-container-content">
+            <div class="projects-card-container">
+              <img src="./images/Business Card 1 - 3D.png" alt="" />
+              <figcaption>PETTO Business card</figcaption>
+              <button class="main-btn centered"><span>view more</span></button>
+            </div>
+          </div>
+        </div>
+        <div class="projects-container">
+          <div class="projects-container-content">
+            <div class="projects-card-container">
+              <img src="./images/Report Cover.png" alt="" />
+              <figcaption>Personnel Report</figcaption>
+              <button class="main-btn centered"><span>view more</span></button>
+            </div>
+          </div>
+        </div>
+        <div class="projects-container">
+          <div class="projects-container-content">
+            <div class="projects-card-container">
+              <img src="./images/Hiring flyers Cover 1.png" alt="" />
+              <figcaption>We are hiring</figcaption>
+              <button class="main-btn centered"><span>view more</span></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- projects section ends here -->
+    <footer>
+      <section class="contact-section">
         <div class="headers low-case">
-          <h2>skills</h2>
+          <h2>contact me</h2>
         </div>
-        <div class="sections-grid">
-          <div class="card-container">
-            <div class="card">
-              <div class="card-icon-back">
-                <img src="./images/xd-icon.svg" alt="" />
-              </div>
-              <p>Adobe XD</p>
-            </div>
-          </div>
-          <div class="card-container">
-            <div class="card">
-              <div class="card-icon-back">
-                <img src="./images/vstudio-icon.svg" alt="" />
-              </div>
-              <p>Visual Studio</p>
-            </div>
-          </div>
-          <div class="card-container">
-            <div class="card">
-              <div class="card-icon-back">
-                <img src="./images/figma-icon.svg" alt="" />
-              </div>
-              <p>Figma</p>
-            </div>
-          </div>
-          <div class="card-container">
-            <div class="card">
-              <div class="card-icon-back">
-                <img src="./images/vba-icon.svg" alt="" />
-              </div>
-              <p>Visual Basic</p>
-            </div>
-          </div>
-          <div class="card-container">
-            <div class="card">
-              <div class="card-icon-back">
-                <img src="./images/ps-icon.svg" alt="" />
-              </div>
-              <p>Photoshop</p>
-            </div>
-          </div>
-          <div class="card-container">
-            <div class="card">
-              <div class="card-icon-back">
-                <img src="./images/sw-icon.svg" alt="" />
-              </div>
-              <p>CSWA Solidworks</p>
-            </div>
-          </div>
-        </div>
+        <form class="contact-form" action="">
+          <label for="name" class="contact-form-label">Name</label>
+          <input type="text" class="text-input" id="name" placeholder="Please insert your name" required>
+          <label for="email" class="contact-form-label">Email</label>
+          <input type="email" class="text-input" id="email" placeholder="Please insert your email" required>
+          <label for="text-area" class="contact-form-label">Let's work together!</label>
+          <textarea class="text-input" name="text-area" id="text-area" cols="30" rows="10"
+            placeholder="Let's create something big!"></textarea>
+          <button class="form-btn"><span>send</span></button>
+        </form>
       </section>
-
-      <!-- skills section ends here -->
-
-      <!-- reviews sections starts here -->
-
-      <section class="clients-section" id="reviews-section">
+      <section class="social-section">
         <div class="headers low-case">
-          <h2>clients</h2>
+          <h2>social</h2>
         </div>
-        <div class="clients-grid">
-          <div class="back-card">
-            <div class="circle">
-              <div class="img-circle">
-                <img src="./images/client-1-img.jpeg" alt="" />
-              </div>
-            </div>
-            <div class="card-content">
-              <h5>Nicole</h5>
-              <h6>"Bonnetteandotheworld"</h6>
-              <p>
-                "Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Eveniet, totam?"
-              </p>
-            </div>
+        <div class="social-icons">
+          <div class="icons-row">
+            <ion-icon class="icons" name="logo-instagram"></ion-icon><span class="social-span">j.lopezp07</span>
           </div>
-          <div class="back-card">
-            <div class="circle">
-              <div class="img-circle">
-                <img src="./images/client-2-img.jpeg" alt="" />
-              </div>
-            </div>
-            <div class="card-content">
-              <h5>Laura</h5>
-              <h6>"Moon Back"</h6>
-              <p>
-                "Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Eveniet, totam?"
-              </p>
-            </div>
+          <div class="icons-row">
+            <ion-icon class="icons" name="logo-github"></ion-icon><span class="social-span">jlopzp07</span>
+          </div>
+          <div class="icons-row">
+            <ion-icon class="icons" name="logo-whatsapp"></ion-icon><span class="social-span">+57 312 772 44 57</span>
           </div>
         </div>
       </section>
-      <!-- reviews sections ends here -->
-
-      <!-- projects section starts here -->
-      <section class="grid-section" id="projects-section">
-        <div class="headers low-case">
-          <h2>projects</h2>
-        </div>
-        <div class="sections-grid">
-          <div class="projects-container">
-            <div class="projects-container-content">
-              <div class="projects-card-container">
-                <img src="./images/PETTO APP Cover.png" alt="" />
-                <figcaption>PETTO App</figcaption>
-              </div>
-              <button class="projects-card-btn">view more</button>
-            </div>
-          </div>
-          <div class="projects-container">
-            <div class="projects-container-content">
-              <div class="projects-card-container">
-                <img src="./images/Website Cover.png" alt="" />
-                <figcaption>PETTO Web</figcaption>
-              </div>
-              <button class="projects-card-btn">view more</button>
-            </div>
-          </div>
-          <div class="projects-container">
-            <div class="projects-container-content">
-              <div class="projects-card-container">
-                <img src="./images/time-tracking-app.png" alt="" />
-                <figcaption>Time tracking app</figcaption>
-              </div>
-              <button class="projects-card-btn">view more</button>
-            </div>
-          </div>
-          <div class="projects-container">
-            <div class="projects-container-content">
-              <div class="projects-card-container">
-                <img src="./images/Business Card 1 - 3D.png" alt="" />
-                <figcaption>PETTO Business card</figcaption>
-              </div>
-              <button class="projects-card-btn">view more</button>
-            </div>
-          </div>
-          <div class="projects-container">
-            <div class="projects-container-content">
-              <div class="projects-card-container">
-                <img src="./images/Report Cover.png" alt="" />
-                <figcaption>Personnel Report</figcaption>
-              </div>
-              <button class="projects-card-btn">view more</button>
-            </div>
-          </div>
-          <div class="projects-container">
-            <div class="projects-container-content">
-              <div class="projects-card-container">
-                <img src="./images/Hiring flyers Cover 1.png" alt="" />
-                <figcaption>We are hiring</figcaption>
-              </div>
-              <button class="projects-card-btn">view more</button>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- projects section ends here -->
+    </footer>
+    <div class="copy">
+      <h3>&copy Portfolio - Designed, developed by Juan Lopez</h3>
     </div>
-  </body>
+  </div>
+</body>
+
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
 </html>
