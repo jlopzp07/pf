@@ -297,8 +297,9 @@ section:not(:last-child) {
   background-color: #fff;
   border-radius: 20px;
   width: 100%;
+  max-width: 32rem;
   height: 30rem;
-
+  margin: auto;
 }
 
 .projects-card-container img {
@@ -469,6 +470,7 @@ section:not(:last-child) {
   .icons-row {
     display: flex;
     align-items: center;
+    margin-left: 10vw;
   }
   
 }
@@ -476,7 +478,7 @@ section:not(:last-child) {
 @media screen and (min-width: 1440px) {
 
   .grid-section .sections-grid {
-    column-gap: 15rem;
+    column-gap: 7rem;
   }
 
   .back-figure {
